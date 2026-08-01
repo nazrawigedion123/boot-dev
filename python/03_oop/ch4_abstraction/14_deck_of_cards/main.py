@@ -23,16 +23,20 @@ class DeckOfCards:
 
     def __init__(self) -> None:
         self.__cards: list[Card] = []
-        pass
-
+        self.create_deck()        
     def create_deck(self) -> None:
-        pass
+        
+        for s in self.SUITS:
+            for r in self.RANKS:
+                self.__cards.append((r,s))
 
     def shuffle_deck(self) -> None:
-        pass
+        random.shuffle(self.__cards)
 
     def deal_card(self) -> Card | None:
-        pass
+        if len(self.__cards):
+            return self.__cards.pop()
+        return None
 
     # don't touch below this line
 
