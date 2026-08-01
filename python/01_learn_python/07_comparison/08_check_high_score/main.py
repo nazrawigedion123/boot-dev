@@ -1,0 +1,6 @@
+def check_high_score(player_name, high_scoring_player_name, low_scoring_player_name):
+    if player_name==high_scoring_player_name:
+        return "high"
+    if player_name ==low_scoring_player_name:
+        return "low"
+    return "neither"
