@@ -78,3 +78,36 @@ p3 = p1 + p2
 |Bitwise |XOR 	|^ |	__xor__ |
 |Bitwise |NOT 	|~ 	|__invert__ |
 
+## Overriding built-in methods
+
+for example we can instruct our class how its instance should be printed using an __str__ method.
+
+
+``` python 
+
+class Point:
+    def __init__(self, x: int, y: int) -> None:
+        self.x = x
+        self.y = y
+
+
+p1 = Point(4, 5)
+print(p1)
+# <Point object at 0xa0acf8>
+```
+
+``` python
+
+class Point:
+    def __init__(self, x: int, y: int) -> None:
+        self.x = x
+        self.y = y
+
+    def __str__(self) -> str:
+        return f"({self.x},{self.y})"
+
+
+p1 = Point(4, 5)
+print(p1)
+# prints "(4,5)"
+```
