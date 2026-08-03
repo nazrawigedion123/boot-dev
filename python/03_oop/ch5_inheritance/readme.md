@@ -53,3 +53,6 @@ The super() method returns a proxy of the parent class, meaning we can use it to
 
 
 ### When using inheritance make sure child classes are a superset of the parent class. A good child class is a more specific type of its parent class
+### Wide Not Deep
+
+It's more common for an inheritance tree to be wide than deep.
