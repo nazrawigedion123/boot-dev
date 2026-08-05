@@ -1,2 +1,3 @@
-from .screen_dimensions import SCREEN_WIDTH, SCREEN_HEIGHT
+from .screendimensions import SCREEN_WIDTH, SCREEN_HEIGHT
+from .gameplay import PLAYER_RADIOUS,LINE_WIDTH,PLAYER_TURN_SPEED,PLAYER_SPEED
 
