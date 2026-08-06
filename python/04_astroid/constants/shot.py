@@ -1,0 +1,2 @@
+
+SHOT_RADIOUS=5
